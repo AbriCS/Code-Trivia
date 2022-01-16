@@ -1,6 +1,14 @@
 const startbtn=document.getElementById("startbtn")
 const startHeader=document.getElementById("startHeader")
 const questionContainer=document.getElementById("questionContainer")
+const questionEL=document.getElementById("question")
+const btn1El=document.getElementById("answer1");
+const btn2El=document.getElementById("answer2");
+const btn3El=document.getElementById("answer3");
+const btn4El=document.getElementById("answer4");
+const currentQuestionIndex=0
+
+
 
 // create an array of objects with questions and answers for material to work with
 
@@ -44,34 +52,27 @@ startQuiz()
 })
 
 
-
-
 function startQuiz(){
 questionContainer.style.display="block"
-const title=document.createElement("h2")   
-const button1 = document.createElement("button")  
-const button2 = document.createElement("button")  
-const button3 = document.createElement("button")  
-const button4 = document.createElement("button")  
-
-
-for (let i = 0; i < questions.length; i++) {
-
-
-
-
-title.append(questions[i].question)
-button1.append (questions[i].choice1)
-button2.append (questions[i].choice2)
-button3.append (questions[i].choice3)
-button4.append (questions[i].choice4)
-
-
+questionEL.textContent=questions[currentQuestionIndex].question   
+btn1El.textContent=questions[currentQuestionIndex].choice1; 
+btn2El.textContent=questions[currentQuestionIndex].choice2;
+btn3El.textContent=questions[currentQuestionIndex].choice3;
+btn4El.textContent=questions[currentQuestionIndex].choice4;
 }
-questionContainer.append(title, button1, button2, button3, button4)
+/* Timer Section*/
 
-}
+var countDownTime = new Time (1).getTime();
+var x = setInterval(function(){})
+var now = new Date().getTime();
+var distance = countDownTime - now;
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+document.getElementById("timed").innerHTML = days + "seconds + "s";
 
+/* Time up section*/
+const myTimeout = setTimeout (myGreeting, 5000);
+function myGreeting() { document.getElementById("Timeup").innerHTML= "Your Time is Up!"
+if(distance <0) {clearInterval(x);}
 
 
 //create a counter function interval time function eg set interval etc look in activities
