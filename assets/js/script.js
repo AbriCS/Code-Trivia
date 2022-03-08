@@ -10,6 +10,8 @@ const container2=document.getElementById("container2");
 const timercontainer=document.querySelector(".timer");
 const timerseconds=document.getElementById("timer_seconds");
 const answer=document.getElementById("ans-btn");
+const input=document.getElementById("inputform")
+const submitBtn=document.getElementById("submitbtn")
 let currentQuestionIndex=0
 
 
@@ -44,7 +46,7 @@ const questions = [{
     choice4: " All three",
     correct: " All three"
 
-}
+},
 
 {
     question: " What is HTML short for? ",
@@ -115,7 +117,7 @@ let finalScore
 function endQuiz(){
     clearInterval(interval)
     questionContainer.style.display="none"
-finalScore=finalScore
+finalScore=score
 container2.classList.remove("hide")
 }
 //add event listener to target the button with the answers
@@ -125,22 +127,18 @@ answer.addEventListener("click",(event)=>{
     console.log (btnclick)
     checkAnswer(btnclick)
 })
+let highScoreArray=[]
+submitBtn.addEventListener("click",(event)=>{
+    event.preventDefault()
+    const userInput=input.value
+    console.log(userInput)
+    highScoreArray=JSON.parse(localStorage.getItem("HighScores")) || []
+    const userScore={//object
+        initials: userInput,
+        score: finalScore
+    }
+highScoreArray.push(userScore)
+localStorage.setItem("HighScores",JSON.stringify(highScoreArray))
+window.location.assign("score.html") //new page
+})
 
-/* Timer Section*/
-
-/*var countDownTime = new Time (1).getTime();
-var x = setInterval(function(){})
-var now = new Date().getTime();
-var distance = countDownTime - now;
-var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-document.getElementById("timed").innerHTML = days + "seconds + "s";
-
-Time up section
-const myTimeout = setTimeout (myGreeting, 5000);
-function myGreeting() { document.getElementById("Timeup").innerHTML= "Your Time is Up!"
-if(distance <0) {clearInterval(x);}*/
-
-
-//create a counter function interval time function eg set interval etc look in activities
-// how to do css in js to make one page disapper and the other appear eg when you press start the questions appear
-//it can only show when the button is clicked to start
