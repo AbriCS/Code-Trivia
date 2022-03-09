@@ -5,3 +5,26 @@
 .card {
     background-color: aquamarine;
 }
+
+.ansabtn {
+    display:flex;
+    height: 70px;
+    width: 200px;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 5px;
+    color: blue;
+    background-color: blanchedalmond;
+    align-items: center;
+    align-content:center
+}
+
+.ansabtn:hover {
+    background-color: pink;
+}
+
+
+
+
+
+

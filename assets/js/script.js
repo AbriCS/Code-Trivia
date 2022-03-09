@@ -89,7 +89,7 @@ btn4El.setAttribute("value", questions[currentQuestionIndex].choice4 )
 let interval;
 /* this sets the timer and -- starts a countdown*/
 
-let time=100
+let time=60
 function startTimer(){
 timercontainer.classList.remove("hide")
     interval=setInterval(function() {
