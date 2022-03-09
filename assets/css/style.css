@@ -3,11 +3,17 @@
 }
 
 .card {
+    margin-top: 100px;
+}
+
+.card-body {
     background-color: aquamarine;
 }
 
+
 .ansabtn {
     display:flex;
+    
     height: 70px;
     width: 200px;
     padding: 40px;
