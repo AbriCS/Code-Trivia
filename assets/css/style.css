@@ -1,3 +1,9 @@
+.containerise {
+    width: 400px;
+    height: 100% vh;
+    margin-left: 30%;   
+}
+
 .hide {
     display:none;
 }
@@ -30,7 +36,7 @@
 }
 
 
-
+/*NEED RESTART BTN and function
 
 
 
