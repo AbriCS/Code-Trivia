@@ -31,7 +31,8 @@ To use the app you will need the following;
 - Press the Green Start Button
 - You are now presented with a question and four possible answers  
 - Select the answer you think is correct. 
- <br>
+ 
+
  ```
  * Try not to 'google it' if you can guess/recall based on what you have 
  learnt in the lesson.
