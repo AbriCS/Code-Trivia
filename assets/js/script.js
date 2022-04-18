@@ -142,3 +142,4 @@ localStorage.setItem("HighScores",JSON.stringify(highScoreArray))
 window.location.assign("score.html") //new page
 })
 
+
