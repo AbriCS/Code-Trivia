@@ -1,12 +1,14 @@
 # Code Trivia
 
-This is the Code quiz app.  This can be refactored to add more questions or adapted to an entirely different subject.
+This is the Code quiz app.  This app can be refactored to add more questions or adapt to an 
+entirely different subject.
 
 
 ## Description
 
 Code Trivia allows the participant to battle their wits against a  number of 
-questions in a limited timeframe. In this version there are four questions which will test the knowledge of the user on the subject matter or Coding.
+questions in a limited timeframe. In this version there are four questions which will test
+the knowledge of the user on the subject matter or Coding.
 
 
 ## Getting Started
@@ -17,7 +19,8 @@ To use the app you will need the following;
 - Internet ready Device (eg. Laptop/Mobile phone).
 - 60 seconds
 ```
- * 60 seconds is the minimum amount of time you will need but you can keep playing for as long as you like in order to improve your score and therefore your knowledge.
+ * 60 seconds is the minimum amount of time you will need but you can keep 
+ playing for as long as you like in order to improve your score and therefore your knowledge.
  ```
 
 
@@ -28,46 +31,37 @@ To use the app you will need the following;
 - Press the Green Start Button
 - You are now presented with a question and four possible answers  
 - Select the answer you think is correct. 
- <p> 
- * Try not to 'google it' if you can 
-  guess/recall based on what you have learnt in the lesson.
- </p>
+ <br>
+ ```
+ * Try not to 'google it' if you can guess/recall based on what you have 
+ learnt in the lesson.
+  ```
 
-<img src="./assets/images/Github-SSH-Clone-Key.jpg" />
+![Deployed Application-Start Page](/assets/images/Startpage.jpeg)
 
 
-### Executing program
-
-- Open the Terminal (cmd +T) on the local computer and create a home file for the Horiseon Project
-- Open the file then type the following;
-- **Git clone** then "paste the copied SSH key here"
-- Type **Git add** followed by **Git Commit -m'** followed by "the name of the changes made inside the speech marks"
-
-```
-clone, add, commit, push, status
-```
 
 ## Help
 
-Advise for common problems or issues. 
+Contact the Author for advice for common problems or issues. 
 
 ```
-clone, add, commit, push, status or ASK
+JUST ASK !!
 ```
 
-## Authors
+## Author
 
 - Jean McLeod
 - <a href="mailto:AbriCSltd@gmail.com">email me</a>
-- Tweet [@AbriCSltd](https://twitter.com/AbriCSltd)
+- Github [@AbriCS](https://github.com/AbriCS)
 
 ## Version History
 
 - <b>0.2  The Latest<b>
-    - Click [here](https://abrics.github.io/Horiseon) for the final release. 2021/12/12.
+    - Click [here](https://abrics.github.io/Code-Trivia) for the final release. 2022/04/18.
 
 - 0.1
-  - Initial Release 2021/12/02
+  - Initial Release 2022/1/02
 
 ## License
 
